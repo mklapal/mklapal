@@ -121,23 +121,12 @@ function _showContent(content){
 	case "exit":
 		getExit();
 		break;
-	case "exit -Y":
-		window.close();
-		break;
 	case "about":
 		getAbout();
 		break;
 	case "cv":
 		getCv();
 		break;
-	case "exit -Y":
-		window.close();
-		break;
-	case "exit -Y":
-		window.close();
-		break;
-
-
 	default:
 	    $( ".js-content" ).append("<p>" + content + " is unknown command. Please type help for available commands.</p>");
 	}
@@ -174,7 +163,8 @@ function _appendToEl(data){
 }
 
 function _scrollToEl(){
-	$(window).scrollTop($(".js-content :last-child").offset().top);
+	//console.log($(".js-terminal-prefix").offset());
+	$(window).scrollTop($(".js-terminal-prefix").offset().top);
 	//_clearTerminal();
 }
 
@@ -210,11 +200,11 @@ function _welcome(){
 	var timer = setInterval(function () {
 		$( ".js-content" ).append('<div class="terminal-text">[' + _user.username + '@' + _user.user_ip + '] > intro</div>');
 		getWelcome();
+		getMenu();
 		//getCv();
 		clearInterval(timer);
 	}, 3000);
-	//}, 1);
-
+	//}, 1);	
 
 }
 
