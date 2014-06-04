@@ -1,0 +1,117 @@
+.content-cv{
+
+	h2{
+		@include clearfix();
+		display:block;
+		span{
+			@include rounded(3px);
+			font-weight:bold;
+			display:inline-block;
+			background:$black;
+			color:$white;
+			padding:0.2em;
+		}
+		margin:0.5em 0 0.5em 0;
+	}
+
+	.section{
+		@include clearfix();
+		float:left;
+		margin:0 0 0.5em;
+		width:100%;
+	}
+
+	.total-score-section{
+		@include clearfix();
+		float:left;
+		margin:0 0 0.5em;
+		width:100%;
+
+		.box{
+			width:25%;
+			height:auto;
+			float:left;
+			.padding{
+				padding:0em 1em;
+				text-align:center;
+			}
+			p{
+				font-size:0.875em;
+				color:$grey;
+			}
+		}
+	}
+
+	ul.lang{
+		float:left;
+		li{
+			width:50%;
+			float:left;
+			.desc{
+				font-size:0.75em;
+				color:$grey;
+			}
+		}
+	}
+
+	ul.skills{
+		float:left;
+		li{
+			@include rounded(3px);
+			float:left;
+			margin:0 0.8em 0.3em 0;
+			padding:0.2em;
+			background:$grey;
+			color:$white;
+			&.category{
+				background:red;
+			}
+		}
+	}
+
+	ul.aditional{
+		float:left;
+		li{
+			float:left;
+			margin:0 0.8em 0.3em 0;
+			padding:0.2em;
+		}
+	}
+
+	.education-box{
+		margin:0 0 1em;
+		h3{
+			display:inline-block;
+			font-weight:bold;
+		}
+		span{
+			@include rounded(3px);
+			background:$grey;
+			color:$white;
+			font-size:0.625em;
+			padding:0.2em;
+			line-height:1em;
+			position: relative;
+			top: -3px;
+		}
+		p{
+			color:$grey;
+			margin:0.5 0 1em;
+		}
+	}
+
+	table.personal{
+		tr{
+			td:first-child{
+			}
+			td:last-child{
+				font-weight:bold;
+				padding:0 0 0 1em;
+			}
+		}
+
+
+	}
+
+
+}

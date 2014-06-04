@@ -1,0 +1,14 @@
+//how to run
+/*
+
+powershell
+cd 'C:\wamp\www\mklapal\styles'
+sass --watch scss:css --style compressed
+*/
+
+
+@import "_reset";
+@import "_settings";
+@import "_mixin";
+@import "_general";
+@import "_cv";
