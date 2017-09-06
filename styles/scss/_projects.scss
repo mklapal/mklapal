@@ -1,0 +1,77 @@
+.content-contact p {
+	margin: 0 0 0.5em
+}
+.content-projects p {
+	margin: 0 0 0.5em
+}
+.content-projects .section {
+	float: left;
+	margin: 0 0 0.5em;
+	width: 100%
+}
+.content-projects .section:before, .content-projects .section:after {
+	clear: both;
+	content: "";
+	display: table
+}
+.content-projects .section:after {
+	clear: both
+}
+.content-projects .project-box {
+	float: left;
+	width: 100%;
+	min-height: 150px;
+	margin: 0 0 1em
+}
+.content-projects .project-box h3 {
+	display: inline-block;
+	font-weight: bold
+}
+.content-projects .project-box span {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background: #999;
+	color: #fff;
+	font-size: 0.625em;
+	padding: 0.2em;
+	line-height: 1em;
+	position: relative;
+	top: -3px
+}
+.content-projects .project-box p {
+	color: #999;
+	margin: 0.5em 0 0.5em
+}
+.content-projects .project-box a {
+	color: #999
+}
+.content-projects .project-box .project-info {
+	float: left;
+	min-width: 300px;
+	width: 50%;
+	margin: 0 0 1em
+}
+.content-projects .project-box .project-image {
+	float: right;
+	min-width: 300px;
+	width: 50%
+}
+.content-projects .project-box .image {
+	float: right;
+	margin: 0 0 1em 0.5em
+}
+.content-projects .project-box .image img {
+	max-height: 120px;
+	border: 1px solid #999
+}
+.content-projects ul.details {
+	color: #999;
+	margin: 0 1.5em
+}
+.content-projects ul.details li {
+	list-style-type: disc
+}
+.content-projects .know-more {
+	clear: both
+}
